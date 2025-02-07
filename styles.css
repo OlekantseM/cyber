@@ -220,7 +220,7 @@
 /* Responsive Design for Tablets */
 @media (max-width: 1024px) {
     .main {
-        height: 580px;
+        height: 582px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -260,7 +260,7 @@
 @media (max-width: 770px) {
     .main {
         margin-top: 60px;
-        height: 100vh;
+        height: 450px;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -306,7 +306,7 @@
 @media (max-width: 480px) {
     .main {
         margin-top: 60px;
-        height: 100vh;
+        height: 600px;
         width: 100%;
         display: flex;
         justify-content: center;
