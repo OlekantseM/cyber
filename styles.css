@@ -167,8 +167,11 @@
     padding: 0 20px;
     background-image: url('images/heropic.png');
     background-repeat: no-repeat;
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
 }
 
+/* Container */
 .main__container {
     display: flex;
     align-items: center;
@@ -195,7 +198,12 @@
     color: #000;
 }
 
-/* Right Section */
+.main__content p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Right Section (Image) */
 .main__img--container {
     flex: 1;
     display: flex;
@@ -209,19 +217,122 @@
     border-radius: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+/* Responsive Design for Tablets */
+@media (max-width: 1024px) {
+    .main {
+        height: 580px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 0 20px;
+        background-image: url('images/tabhero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
     .main__container {
         flex-direction: column;
         text-align: center;
+        padding: 20px;
     }
 
     .main__content {
         padding: 0 20px;
     }
 
+    .main__content h1 {
+        font-size: 2.4rem;
+    }
+
+    .main__content p {
+        font-size: 1.1rem;
+    }
+
     .main__img--container {
         margin-top: 20px;
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 770px) {
+    .main {
+        margin-top: 60px;
+        height: 450px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 0 20px;
+        background-image: url('images/herotab.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .main__container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main__content {
+        padding: 0 10px;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+    }
+
+    .main__content p {
+        font-size: 1rem;
+    }
+
+    .main__img--container {
+        margin-top: 20px;
+    }
+
+    /* Adjust button size */
+    .main__btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    .main {
+        margin-top: 60px;
+        height: 600px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        padding: 0 20px;
+        background-image: url('images/phonehero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .main__content h1 {
+        font-size: 1.8rem;
+    }
+
+    .main__content p {
+        font-size: 0.9rem;
+    }
+
+    .main__img--container img {
+        width: 90%;
+    }
+
+    .main {
+        padding: 10px;
     }
 }
 
