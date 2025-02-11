@@ -18,8 +18,18 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.querySelector('.menu-button');
   const navMenu = document.querySelector('.nav__menu');
+  const icon = menuButton.querySelector("i"); // Get the icon inside the button
 
   menuButton.addEventListener('click', function () {
       navMenu.classList.toggle('active');
+
+      // Toggle between hamburger and close icon
+      if (navMenu.classList.contains('active')) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times"); // Change to 'X' icon when menu is open
+      } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars"); // Change back to bars when menu is closed
+      }
   });
 });
