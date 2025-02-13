@@ -557,7 +557,7 @@
 /* Change Background for Mobile View (max-width: 480px) */
 @media screen and (max-width: 480px) {
     .cta-section {
-        background: url('images/2.png');
+        background: url('images/3.png');
         height: 55vh; 
         margin-bottom: 45px;
         margin-top: 25px;    
