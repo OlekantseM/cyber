@@ -558,7 +558,7 @@
 @media screen and (max-width: 480px) {
     .cta-section {
         background: url('images/1.png');
-        height: 55vh; 
+        height: 65vh; 
         margin-bottom: 45px;
         margin-top: 25px;    
         background-repeat: no-repeat;
